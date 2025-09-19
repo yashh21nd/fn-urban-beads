@@ -1,26 +1,37 @@
+
+.flower-bg {
+  background: repeating-radial-gradient(circle at 20% 40%, #e7d7c9 0 10px, transparent 11px 40px), repeating-radial-gradient(circle at 80% 60%, #e7d7c9 0 10px, transparent 11px 40px);
+}
+.animate-fade-in {
+  animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f5f0;
+  --foreground: #b89b6a;
+  --accent: #f7ecd8;
+  --accent-dark: #e2c9a0;
+  --primary: #c7a97b;
+  --primary-dark: #a67c52;
+  --card: #f3e9dd;
+  --shadow: 0 4px 24px 0 rgba(198, 174, 135, 0.12);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background) url('/background.jpg') no-repeat center top fixed;
+  background-size: cover;
 }
