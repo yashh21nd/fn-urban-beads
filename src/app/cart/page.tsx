@@ -21,9 +21,9 @@ export default function Cart() {
                 <Image src={item.image} alt={item.name} width={60} height={60} className="rounded-full" style={{ background: 'var(--card)' }} />
                 <div className="flex-1 text-left">
                   <div className="font-bold" style={{ color: 'var(--primary-dark)' }}>{item.name}</div>
-                  <div className="text-sm" style={{ color: 'var(--primary)' }}>Qty: {item.quantity}</div>
+                  <div className="text-sm font-bold" style={{ color: '#6b3f13' }}>Qty: {item.quantity}</div>
                   {typeof item.price === 'number' && !isNaN(item.price) ? (
-                    <div className="font-semibold" style={{ color: 'var(--primary)' }}>₹{item.price * item.quantity}</div>
+                    <div className="font-bold" style={{ color: '#6b3f13', fontSize: '1.1rem' }}>₹{item.price * item.quantity}</div>
                   ) : null}
                 </div>
                 <button
