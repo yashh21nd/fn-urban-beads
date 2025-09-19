@@ -3,7 +3,20 @@ import Image from "next/image";
 import { useState } from "react";
 import { useCart } from "../CartContext";
 
-export default function ProductList({ title, products }: { title: string; products: any[] }) {
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  description?: string;
+}
+
+interface ProductListProps {
+  title: string;
+  products: Product[];
+}
+
+export default function ProductList({ title, products }: ProductListProps) {
   const { addToCart } = useCart();
   const [clickedId, setClickedId] = useState<number | null>(null);
   return (

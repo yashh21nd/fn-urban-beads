@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useCart } from "../CartContext";
 
 export default function Checkout() {
-  const { cart, clearCart } = useCart();
+  const { clearCart } = useCart();
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", address: "", contact: "" });
 

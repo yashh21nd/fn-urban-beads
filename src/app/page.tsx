@@ -3,19 +3,19 @@ import ProductList from "./products/ProductList";
 
 const peoplesChoice = [
   // 3 necklaces
-  { id: 1, name: "n-1", image: "/n-1.jpg", category: "Necklaces" },
-  { id: 2, name: "n-2", image: "/n-2.jpg", category: "Necklaces" },
-  { id: 3, name: "n-3", image: "/n-3.jpg", category: "Necklaces" },
+  { id: 1, name: "n-1", image: "/n-1.jpg", category: "Necklaces", price: 299 },
+  { id: 2, name: "n-2", image: "/n-2.jpg", category: "Necklaces", price: 299 },
+  { id: 3, name: "n-3", image: "/n-3.jpg", category: "Necklaces", price: 299 },
   // 2 beads
-  { id: 4, name: "b-1", image: "/b-1.jpg", category: "Beads" },
-  { id: 5, name: "b-2", image: "/b-2.jpg", category: "Beads" },
+  { id: 4, name: "b-1", image: "/b-1.jpg", category: "Beads", price: 199 },
+  { id: 5, name: "b-2", image: "/b-2.jpg", category: "Beads", price: 199 },
   // 2 earrings
-  { id: 6, name: "e-1", image: "/e-1.jpg", category: "Earrings" },
-  { id: 7, name: "e-2", image: "/e-2.jpg", category: "Earrings" },
+  { id: 6, name: "e-1", image: "/e-1.jpg", category: "Earrings", price: 249 },
+  { id: 7, name: "e-2", image: "/e-2.jpg", category: "Earrings", price: 249 },
   // 3 phone charms
-  { id: 8, name: "p-1", image: "/p-1.jpg", category: "Phone Charms" },
-  { id: 9, name: "p-2", image: "/p-2.jpg", category: "Phone Charms" },
-  { id: 10, name: "p-3", image: "/p-3.jpg", category: "Phone Charms" },
+  { id: 8, name: "p-1", image: "/p-1.jpg", category: "Phone Charms", price: 149 },
+  { id: 9, name: "p-2", image: "/p-2.jpg", category: "Phone Charms", price: 149 },
+  { id: 10, name: "p-3", image: "/p-3.jpg", category: "Phone Charms", price: 149 },
 ];
 
 export default function Home() {

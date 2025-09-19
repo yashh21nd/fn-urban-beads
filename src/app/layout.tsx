@@ -29,10 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        {/* Removed synchronous script as per Next.js best practices */}
       </head>
       <body
-  className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
         <CartProvider>
           <Navbar />

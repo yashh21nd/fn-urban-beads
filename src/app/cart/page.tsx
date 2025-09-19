@@ -5,7 +5,6 @@ import { useCart } from "../CartContext";
 
 export default function Cart() {
   const { cart, removeFromCart, clearCart } = useCart();
-  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   return (
     <section className="max-w-2xl mx-auto mt-12 card text-center animate-fade-in">
       <h1 className="text-4xl font-extrabold mb-4">Your Cart</h1>

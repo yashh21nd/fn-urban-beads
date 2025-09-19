@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <div className="max-w-5xl mx-auto mt-12 flex flex-col gap-10">
@@ -28,7 +30,7 @@ export default function About() {
       </section>
       <div className="flex flex-col md:flex-row gap-8">
         <section className="flex-1 animate-fade-in-up flex flex-col items-center" style={{ background: 'var(--card)', borderRadius: '2rem', boxShadow: '0 4px 32px 0 rgba(166, 124, 82, 0.10)', padding: '2.5rem 2rem', border: '2px solid var(--primary)' }}>
-          <img src="/mandiraprofile.png" alt="Mandira More Urban Beads" style={{ width: '120px', height: '120px', objectFit: 'cover', borderRadius: '50%', marginBottom: '1rem', border: '3px solid var(--primary)' }} />
+          <Image src="/mandiraprofile.png" alt="Mandira More Urban Beads" width={120} height={120} style={{ objectFit: 'cover', borderRadius: '50%', marginBottom: '1rem', border: '3px solid var(--primary)' }} />
           <h2 className="text-2xl font-bold mb-2" style={{ color: '#111', fontWeight: 900, letterSpacing: '0.04em' }}>Mandira More</h2>
           <p className="text-base mb-1 font-bold" style={{ color: 'var(--primary-dark)' }}>
             Mandira More is the creative mind and founder behind Urban Beads. A passionate artisan, Mandira brings her love for design and detail to every piece she creates.
@@ -38,7 +40,7 @@ export default function About() {
           </p>
         </section>
         <section className="flex-1 animate-fade-in-up flex flex-col items-center" style={{ background: 'var(--card)', borderRadius: '2rem', boxShadow: '0 4px 32px 0 rgba(166, 124, 82, 0.10)', padding: '2.5rem 2rem', border: '2px solid var(--primary)' }}>
-          <img src="/preetinaidu.jpg" alt="Preeti Naidu profile" style={{ width: '120px', height: '120px', objectFit: 'cover', borderRadius: '50%', marginBottom: '1rem', border: '3px solid var(--primary)' }} />
+          <Image src="/preetinaidu.jpg" alt="Preeti Naidu profile" width={120} height={120} style={{ objectFit: 'cover', borderRadius: '50%', marginBottom: '1rem', border: '3px solid var(--primary)' }} />
           <h2 className="text-2xl font-bold mb-2" style={{ color: '#111', fontWeight: 900, letterSpacing: '0.04em' }}>Preeti Naidu</h2>
           <p className="text-base mb-1 font-bold" style={{ color: 'var(--primary-dark)' }}>
             Preeti Naidu is the co-owner of Urban Beads and a creative entrepreneur. She is a BCom graduate and has always been passionate about building something meaningful.
@@ -49,7 +51,7 @@ export default function About() {
         </section>
       </div>
       <section className="animate-fade-in-up flex flex-col md:flex-row items-center gap-8 mt-12" style={{ background: 'var(--card)', borderRadius: '2rem', boxShadow: '0 4px 32px 0 rgba(166, 124, 82, 0.10)', padding: '2.5rem 2rem', border: '2px solid var(--primary)' }}>
-        <img src="/workshop.jpg" alt="Urban Beads Workshop at KHS Campus" style={{ width: '220px', height: 'auto', borderRadius: '1.5rem', objectFit: 'cover', boxShadow: '0 2px 16px 0 rgba(166, 124, 82, 0.10)' }} />
+  <Image src="/workshop.jpg" alt="Urban Beads Workshop at KHS Campus" width={220} height={160} style={{ borderRadius: '1.5rem', objectFit: 'cover', boxShadow: '0 2px 16px 0 rgba(166, 124, 82, 0.10)' }} />
         <div className="flex-1">
           <h2 className="text-3xl font-extrabold mb-4" style={{ color: '#111', letterSpacing: '0.04em' }}>Workshop</h2>
           <p className="text-base font-bold mb-2" style={{ color: 'var(--primary-dark)' }}>

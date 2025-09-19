@@ -44,7 +44,7 @@ export default function Dashboard() {
   <p className="text-lg font-medium" style={{ color: 'var(--foreground)' }}>Manage and explore all categories</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-10">
-        {categories.map((cat, index) => (
+        {categories.map((cat) => (
           <Link key={cat.name} href={cat.href}>
             <div className={`card flex flex-col items-center justify-center h-56 cursor-pointer bg-gradient-to-br ${cat.color} hover:scale-105 hover:shadow-2xl transition-all duration-300 animate-fade-in-up`}
             >
