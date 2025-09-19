@@ -16,9 +16,6 @@ export default function Navbar() {
         <Link href="/about" className="transition-colors" style={{ color: 'var(--primary-dark)' }}>About</Link>
         <Link href="/products" className="transition-colors" style={{ color: 'var(--primary-dark)' }}>Shop</Link>
       </div>
-      <Link href="/dashboard" className="ml-8 font-bold text-lg transition-colors" style={{ color: 'var(--primary-dark)' }}>
-        Dashboard
-      </Link>
       <Link href="/cart" className="relative group ml-6">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-9 h-9 transition-colors" style={{ color: '#a67c52' }}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.836l.383 1.437m0 0L7.5 15.75A2.25 2.25 0 009.66 18h4.68a2.25 2.25 0 002.16-2.25V7.5H6.375m0 0L5.106 4.273A1.125 1.125 0 004.125 3H2.25m4.125 4.5h13.125a.375.375 0 01.375.375v.75a.375.375 0 01-.375.375H6.375m0 0v9.375A2.25 2.25 0 008.625 18h6.75a2.25 2.25 0 002.25-2.25V7.5" />
